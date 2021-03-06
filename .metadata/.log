@@ -11441,3 +11441,234 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 17:37:38.340
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QcvGcwZr => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:08.651
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:08.662
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@38c9e937[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:08.676
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.611
+!MESSAGE Boot LS startup time from start to initialized: 4903ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.692
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ZzVwhoxAisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.705
+!MESSAGE subscribing to classpath changes: sts4.classpath.ZzVwhoxA isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.715
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.726
+!MESSAGE subsribers = {sts4.classpath.ZzVwhoxA=Send Classpath Notifications(2510)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.738
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.747
+!MESSAGE project spring-jdbc ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.758
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.767
+!MESSAGE Preparing classpath changed notification spring-jdbc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.776
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ZzVwhoxA => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.784
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.795
+!MESSAGE classpath=40 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.805
+!MESSAGE buffering callback sts4.classpath.ZzVwhoxA spring-jdbc false 40
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.813
+!MESSAGE executing callback sts4.classpath.ZzVwhoxA 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:14:13.839
+!MESSAGE executing callback sts4.classpath.ZzVwhoxA SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-03-06 19:39:50.365
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:96)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaCompletionProposalComputer.lambda$0(SpringBootJavaCompletionProposalComputer.java:55)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:244)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-03-06 19:39:51.021
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:96)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaCompletionProposalComputer.lambda$0(SpringBootJavaCompletionProposalComputer.java:55)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:244)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-03-06 19:39:51.324
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:96)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaCompletionProposalComputer.lambda$0(SpringBootJavaCompletionProposalComputer.java:55)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source)
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:244)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:40:13.249
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZzVwhoxA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:40:13.258
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ZzVwhoxA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:40:13.269
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:40:13.280
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZzVwhoxA => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:23.909
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:23.922
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@38c9e937[org.springframework.tooling.boot.ls:1.13.0.201911200938(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:23.977
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.265
+!MESSAGE Boot LS startup time from start to initialized: 2270ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.297
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.jwuIPDVjisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.308
+!MESSAGE subscribing to classpath changes: sts4.classpath.jwuIPDVj isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.316
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.325
+!MESSAGE subsribers = {sts4.classpath.jwuIPDVj=Send Classpath Notifications(3326)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.335
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.345
+!MESSAGE project spring-jdbc-config ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.354
+!MESSAGE Preparing classpath changed notification spring-jdbc-config
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.362
+!MESSAGE project spring-jdbc ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.370
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.378
+!MESSAGE project spring-jdbc-template ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.386
+!MESSAGE classpath=40 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.394
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.403
+!MESSAGE buffering callback sts4.classpath.jwuIPDVj spring-jdbc-config false 40
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.411
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.jwuIPDVj => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.419
+!MESSAGE Preparing classpath changed notification spring-jdbc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.429
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.440
+!MESSAGE classpath=40 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.450
+!MESSAGE buffering callback sts4.classpath.jwuIPDVj spring-jdbc false 40
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.459
+!MESSAGE Preparing classpath changed notification spring-jdbc-template
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.467
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.478
+!MESSAGE classpath=40 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.489
+!MESSAGE buffering callback sts4.classpath.jwuIPDVj spring-jdbc-template false 40
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.498
+!MESSAGE executing callback sts4.classpath.jwuIPDVj 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-03-06 19:42:26.531
+!MESSAGE executing callback sts4.classpath.jwuIPDVj SUCCESS [done]
