@@ -1,0 +1,10 @@
+package com.account.controller;
+
+import com.account.service.AccountService;
+
+public class Main {
+	
+	private AccountService accountService;
+
+	
+}

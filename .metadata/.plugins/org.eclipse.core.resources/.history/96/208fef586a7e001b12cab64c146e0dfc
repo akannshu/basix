@@ -1,0 +1,15 @@
+package com.account.dao;
+
+import java.util.List;
+
+import com.account.dto.Account;
+
+public interface AccountDao {
+	
+    public List<Account> getAllAccounts();
+    public Account getById(int id);
+    public void update(Account account);
+    public void delete(int id);
+    public void insert(Account account);
+
+}
